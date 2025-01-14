@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../img/Icon_personal.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+  left: -14px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-menu a {
+  padding: 30px 15px;
+  font-size: 1.125rem;
+}
+
+@media (width <= 700px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header::before {
+    position: initial;
+  }
+
+  .header-logo {
+    margin: 5px 0 20px 0;
+  }
+
+  .header-menu a {
+    padding: 20px 10px;
+  }
+}
