@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   margin-bottom: 80px;
+  color: #141414;
 }
 
 .header::before {
@@ -33,6 +34,7 @@
   .header {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .header::before {
@@ -44,6 +46,8 @@
   }
 
   .header-menu a {
-    padding: 20px 10px;
+    background-color: #fafafa;
+    padding: 10px 10px;
+    border-radius: 5px;
   }
 }

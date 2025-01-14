@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 140px;
+  margin-bottom: 120px;
+}
+
+.introducao div {
+  position: relative;
+}
+
+.introducao div::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: linear-gradient(180deg, #99f888 0%, #49c92c 100%);
+  width: 5px;
+  height: 250px;
+  left: -55px;
+  top: 5px;
+}
+
+.introducao div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: linear-gradient(180deg, #49c92c 0%, #99f888 100%);
+  width: 5px;
+  height: 250px;
+  right: 135px;
+  top: 5px;
+}
+
+.introducao h1 {
+  font-family: "Oswald", serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+@media (width <= 1200px) {
+  .introducao div::after {
+    right: 5px;
+  }
+}
+
+@media (width <= 1000px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .introducao div::before {
+    height: 240px;
+    top: 0;
+    left: -45px;
+  }
+
+  .introducao div::after {
+    display: none;
+  }
+
+  .introducao h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (width <= 800px) {
+  .introducao {
+    gap: 40px;
+  }
+
+  .introducao div::before {
+    background: linear-gradient(60deg, #99f888 0%, #49c92c 100%);
+    width: 327px;
+    height: 5px;
+    left: 0;
+    top: -5px;
+  }
+
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+
+@media (width <= 600px) {
+  .introducao { 
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .introducao img {
+    display: none;
+  }
+
+  .introducao h1 {
+    margin-bottom: 40px;
+  }
+}
