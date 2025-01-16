@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  gap: 140px;
+  gap: 100px;
   margin-bottom: 120px;
 }
 
@@ -77,6 +77,7 @@
 @media (width <= 800px) {
   .introducao {
     gap: 40px;
+    margin-bottom: 100px;
   }
 
   .introducao div::before {
@@ -97,6 +98,7 @@
   .introducao { 
     grid-template-columns: 1fr;
     gap: 0;
+    margin-bottom: 80px;
   }
 
   .introducao img {

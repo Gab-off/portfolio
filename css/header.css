@@ -51,3 +51,9 @@
     border-radius: 5px;
   }
 }
+
+@media (width <= 800px) {
+  .header {
+    margin-bottom: 40px;
+  }
+}
