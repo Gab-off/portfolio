@@ -54,10 +54,6 @@ footer::before {
     grid-template-columns: 1fr;
   }
 
-  .footer p {
-    font-size: 1.2rem;
-  }
-
   .footer ul {
     font-size: 1.5rem;
     justify-self: flex-start;
@@ -66,5 +62,11 @@ footer::before {
 
   .footer span {
     text-align: center;
+  }
+}
+
+@media (width <= 700px) {
+  .footer p {
+    font-size: 1.2rem;
   }
 }
