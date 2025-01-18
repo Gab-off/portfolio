@@ -7,7 +7,7 @@
 body {
   font-family: "fira sans", sans-serif;
   color: #525252;
-  padding: 50px 24px;
+  padding: 50px 0 0 0;
 }
 
 h1, h2, h3, h4, p {
@@ -37,10 +37,10 @@ img {
 
 @media (width <= 700px ) {
   body {
-    padding: 20px 10px;
+    padding-top: 20px;
   }
 
   .global-container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }

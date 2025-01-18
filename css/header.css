@@ -8,14 +8,14 @@
   color: #141414;
 }
 
-.header::before {
+.header::after {
   content: "";
   position: absolute;
   display: block;
   background: url("../img/Icon_personal.svg") no-repeat;
   width: 30px;
   height: 30px;
-  left: -14px;
+  left: 185px;
 }
 
 .header-menu {
@@ -55,5 +55,13 @@
 @media (width <= 800px) {
   .header {
     margin-bottom: 40px;
+  }
+
+
+}
+
+@media (width <= 700px) {
+  .header::after {
+    display: none;
   }
 }
