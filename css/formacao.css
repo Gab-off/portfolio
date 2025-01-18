@@ -106,7 +106,7 @@
   content: "";
   display: block;
   position: absolute;
-  background: url(../img/cursos_intensivos.svg);
+  background: url(../img/cursos_intensivos.svg) no-repeat center;
   width: 24px;
   height: 24px;
   left: -35px;
@@ -139,7 +139,7 @@
   content: "";
   display: block;
   position: absolute;
-  background: url(../img/idiomas.svg);
+  background: url(../img/idiomas.svg) no-repeat center;
   width: 24px;
   height: 24px;
   left: -35px;
