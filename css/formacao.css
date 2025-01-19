@@ -161,7 +161,7 @@
     gap: initial;
   }
 
-  .formacao-curso .item:last-child {
+  .formacao-curso li:nth-child(3) {
     grid-row: 2;
     margin-bottom: 20px;
   }
